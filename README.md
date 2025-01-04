@@ -27,7 +27,7 @@ The chat interface is experiencing several issues:
 
 ## Getting Started
 
-1. Fork this repository
+1. Download this repository
 2. Open index.html in your browser
 3. Open your browser's developer tools
 4. Try sending messages and observe the behavior
