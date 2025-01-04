@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darban.ai Chat</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="darban-ai-chatbox" style="display: none;">
+        <div class="darban-chat-header">
+            <div class="darban-header-content">
+                <div class="darban-header-title">
+                    <div class="darban-avatar">
+                        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=darban" alt="AI Avatar" />
+                    </div>
+                    <div class="darban-title-text">
+                        <h1>Darban AI</h1>
+                        <span class="darban-status">Online</span>
+                    </div>
+                </div>
+                <button class="darban-close-chat" onclick="darbanCloseChat()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="darban-chat-body">
+            <div class="darban-welcome-message">
+                <h2>Welcome to Darban AI! 👋</h2>
+                <p>I'm here to help. Feel free to ask me anything.</p>
+            </div>
+        </div>
+
+        <div class="darban-chat-footer">
+            <div class="darban-input-wrapper">
+                <input type="text" placeholder="Type your message..." aria-label="Type your message">
+                <button onclick="darbanSendMessage()" class="darban-send-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="darban-ai-icon" onclick="darbanOpenChat()" style="display: block;">
+        <div class="darban-icon-inner">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
